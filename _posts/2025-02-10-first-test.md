@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "FIrst Test"
-date: 2025_11_29_21:00
+date: 2025_11_29
 cotegories: [计划]
 ---
   使用Github pagess自助搭建的blog，目前只有最基础的功能
