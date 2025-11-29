@@ -1,4 +1,5 @@
 ---
+layout: _posts
 title: Hello World
 date: 2025-02-10
 categories: 随笔
