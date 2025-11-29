@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "FIrst Test"
+title: "First Test"
 date: 2025_11_29
 cotegories: [计划]
 ---
