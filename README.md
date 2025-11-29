@@ -2,4 +2,6 @@
 本仓库为我的 静态blog界面提供服务
 包括
 ___README.md
-___
+_____posts
+_____config.yml
+____index.md
