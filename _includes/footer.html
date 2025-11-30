@@ -26,4 +26,52 @@
 [data-theme="dark"] .site-footer{ background-color:#111; border-top:1px solid #333; color:#bbb; }
 [data-theme="dark"] .footer-nav a{ color:#ddd; }
 [data-theme="dark"] .footer-nav a:hover{ color:#fff; }
+/* ========================= */
+/* 主体内容暗色模式（新增） */
+/* ========================= */
+
+/* 整个页面背景 + 文字颜色 */
+[data-theme="dark"] body {
+  background-color: #000;     /* 背景黑 */
+  color: #ddd;                /* 默认字体亮灰 */
+}
+
+/* 中间内容区域（Minima 的主要容器） */
+[data-theme="dark"] .page-content,
+[data-theme="dark"] .post,
+[data-theme="dark"] .wrapper,
+[data-theme="dark"] .home {
+  background-color: #000;     /* 背景黑 */
+  color: #ddd;                /* 文本亮灰 */
+}
+
+/* 所有链接的暗色样式 */
+[data-theme="dark"] a {
+  color: #9cf;                /* 淡蓝色 */
+}
+[data-theme="dark"] a:hover {
+  color: #cff;                /* 更亮 */
+}
+
+/* 文章标题颜色 */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #eee;
+}
+
+/* 代码块暗色（可选，但推荐） */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background-color: #111;
+  color: #fff;
+}
+
+/* 分割线暗色 */
+[data-theme="dark"] hr {
+  border-color: #333;
+}
 </style>
