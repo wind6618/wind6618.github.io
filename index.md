@@ -3,4 +3,6 @@ layout: home
 title: 欢迎来到我的博客
 ---
 
-这是一个极简的 GitHub Pages 博客，使用 **minima** 主题构建。
+浮光跃金 静影沉壁
+
+渔歌互答 何乐极也
