@@ -1,5 +1,5 @@
 ---
-layout: search
+layout: default
 title: "便捷的查询"
 permalink: /index/
 ---
