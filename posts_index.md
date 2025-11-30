@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "便捷的查询"
-permalink: /index/
+permalink: /posts_index/
 ---
 
 本界面用于对blog内的文章归档，分类，以便于查询
