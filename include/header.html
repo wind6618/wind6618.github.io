@@ -1,0 +1,37 @@
+<header class="site-header" role="banner" style="display:flex;align-items:center;justify-content:space-between;padding:10px 20px;">
+  <!-- 网站标题 -->
+  <div class="site-title">
+    <a href="{{ "/" | relative_url }}" style="text-decoration:none;color:inherit;">
+      {{ site.title }}
+    </a>
+  </div>
+
+  <!-- 导航栏 -->
+  <nav class="site-nav" role="navigation">
+    <a class="page-link" href="{{ "/" | relative_url }}">首页</a>
+    <a class="page-link" href="{{ "/about/" | relative_url }}">About</a>
+    <a class="page-link" href="{{ "/posts_index/" | relative_url }}">文章索引</a>
+
+    <!-- 亮/暗模式切换按钮 -->
+    <button id="theme-toggle" style="background:none;border:none;font-size:20px;cursor:pointer;margin-left:15px;">
+      🌙
+    </button>
+  </nav>
+</header>
+
+<!-- 可选：响应式样式 -->
+<style>
+  @media (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .site-nav {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+</style>
+
