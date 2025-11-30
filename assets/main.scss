@@ -1,5 +1,4 @@
 /* =============== */
-/* 🌙 Dark Theme   */
 /* Auto Mode Switch */
 /* =============== */
 
@@ -203,38 +202,115 @@
 [data-theme="dark"] #right-toc .toc-title {
   color: #f2f2f2 !important;
 }
-/* --- 整体暗色背景 --- */
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  margin: 0;
-  padding: 0;
-}
+/* ----------------------------------
+   🌙 Global Dark Mode (Minima theme)
+   ---------------------------------- */
 
-/* --- 顶部导航暗色 --- */
-header, .site-header {
-  background-color: #1e1e1e !important;
-  color: #ffffff !important;
-}
-
-/* --- 底部暗色 --- */
-footer, .site-footer {
-  background-color: #1e1e1e !important;
-  color: #ffffff !important;
-}
-
-/* --- 链接颜色（亮蓝） --- */
-a {
-  color: #8ab4f8;
-}
-
-/* --- 页面主体 / 文章区域暗色（最关键） --- */
-main,
-.page-content,
-article,
-section,
-.content {
+/* 整体背景与文字颜色 */
+html, body {
   background-color: #121212 !important;
   color: #e0e0e0 !important;
 }
+
+/* 顶部导航栏 */
+header, .site-header {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-bottom: solid 1px #333 !important;
+}
+
+/* 底部 */
+footer, .site-footer {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border-top: solid 1px #333 !important;
+}
+
+/* 主体内容容器 */
+.page-content,
+main,
+article,
+section,
+.content,
+.wrapper {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* 文章标题 */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+/* 链接颜色（蓝） */
+a {
+  color: #82aaff !important;
+}
+
+a:hover {
+  color: #bbd6ff !important;
+}
+
+/* 引用块 */
+blockquote {
+  background-color: #1d1d1d !important;
+  border-left: 4px solid #555 !important;
+  color: #ccc !important;
+}
+
+/* 代码块 */
+pre, code {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-radius: 5px !important;
+}
+
+/* fenced code block */
+pre.highlight {
+  background-color: #1e1e1e !important;
+}
+
+/* 表格暗色 */
+table {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+table th, table td {
+  border: 1px solid #333 !important;
+}
+
+/* 分割线 */
+hr {
+  border: 0;
+  border-top: 1px solid #333 !important;
+}
+
+/* 列表项颜色 */
+li {
+  color: #ccc !important;
+}
+
+/* 按钮（如果有） */
+button {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+  border: 1px solid #444 !important;
+}
+
+/* 让所有 box 模块保持暗色 */
+.post,
+.post-content,
+.post-list,
+.post-title {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+
+/* 图片居中（可选） */
+img {
+  display: block;
+  margin: 1rem auto;
+}
+
 
