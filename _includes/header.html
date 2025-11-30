@@ -59,5 +59,19 @@ toggle.addEventListener('click', ()=>{
 [data-theme="dark"] .site-header { background-color: #111; border-bottom:1px solid #333; color: #bbb; }
 [data-theme="dark"] .site-nav a { color:#ddd; }
 [data-theme="dark"] .site-nav a:hover { color:#fff; }
+
+/* 默认亮色模式 */
+#theme-toggle {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 暗色模式 */
+[data-theme="dark"] #theme-toggle {
+  color: white;   /* 暗色模式下文字变白 */
+}
+
 </style>
 
