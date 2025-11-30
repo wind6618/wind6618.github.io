@@ -133,3 +133,16 @@
 [data-theme="dark"] a:hover {
   color: #cff;
 }
+
+/* 默认亮色模式 */
+#toggle {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 暗色模式 */
+[data-theme="dark"] #toggle {
+  color: white;
+}
