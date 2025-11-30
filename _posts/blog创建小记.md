@@ -1,6 +1,7 @@
 ---
 layout: post
 title: blog创建小记
+date: 2025_12_1
 ---
   第一篇blog
 
