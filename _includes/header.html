@@ -1,0 +1,62 @@
+<header class="site-header" role="banner">
+  <div class="site-title">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </div>
+  <nav class="site-nav" role="navigation">
+    <a href="{{ '/' | relative_url }}">首页</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    <a href="{{ '/posts_index/' | relative_url }}">文章索引</a>
+    <button id="theme-toggle" title="切换亮/暗模式">🌙</button>
+  </nav>
+</header>
+
+<style>
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--header-bg, #f8f8f8);
+}
+.site-title a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.site-nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+.site-nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .site-header { flex-direction: column; align-items: flex-start; }
+  .site-nav { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 10px; }
+}
+/* 暗色模式 */
+[data-theme="dark"] .site-header { background-color: #111; border-bottom:1px solid #333; color: #bbb; }
+[data-theme="dark"] .site-nav a { color:#ddd; }
+[data-theme="dark"] .site-nav a:hover { color:#fff; }
+</style>
+
+<script>
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', ()=>{
+  const html = document.documentElement;
+  if(html.getAttribute('data-theme')==='dark'){
+    html.setAttribute('data-theme','light');
+    toggle.textContent='🌙';
+  }else{
+    html.setAttribute('data-theme','dark');
+    toggle.textContent='☀️';
+  }
+});
+</script>
