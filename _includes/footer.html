@@ -1,0 +1,29 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-nav">
+    <a href="{{ '/' | relative_url }}">首页</a> |
+    <a href="{{ '/about/' | relative_url }}">About</a> |
+    <a href="{{ '/posts_index/' | relative_url }}">文章索引</a> |
+    <a href="{{ site.github.repository_url }}" target="_blank">GitHub</a>
+  </div>
+  <div class="footer-info">
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.
+  </div>
+</footer>
+
+<style>
+.site-footer{
+  text-align:center;
+  padding:20px 10px;
+  border-top:1px solid #ddd;
+  font-size:14px;
+  background-color: var(--footer-bg,#f8f8f8);
+  color:#555;
+}
+.footer-nav a{ margin:0 8px; text-decoration:none; color:inherit; }
+.footer-nav a:hover{ text-decoration:underline; }
+@media(max-width:768px){ .footer-nav{ display:flex; flex-direction:column; gap:5px; margin-bottom:15px; } }
+/* 暗色模式 */
+[data-theme="dark"] .site-footer{ background-color:#111; border-top:1px solid #333; color:#bbb; }
+[data-theme="dark"] .footer-nav a{ color:#ddd; }
+[data-theme="dark"] .footer-nav a:hover{ color:#fff; }
+</style>
