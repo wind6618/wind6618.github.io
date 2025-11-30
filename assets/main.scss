@@ -109,3 +109,98 @@
 /* =============== */
 /* 🌙 END Dark Mode */
 /* =============== */
+/* ====================== */
+/* 🌙 Dark Mode Overrides  */
+/* ====================== */
+
+[data-theme="dark"] body {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+/* 链接 */
+[data-theme="dark"] a {
+  color: #8ab4f8;
+}
+[data-theme="dark"] a:hover {
+  color: #a7c8ff;
+}
+
+/* 导航栏 */
+[data-theme="dark"] .site-header {
+  background-color: #111 !important;
+  border-bottom: 1px solid #333;
+}
+[data-theme="dark"] .site-title,
+[data-theme="dark"] .site-nav .page-link {
+  color: #eaeaea !important;
+}
+
+/* 页脚 */
+[data-theme="dark"] .site-footer {
+  background-color: #111;
+  border-top: 1px solid #333;
+  color: #bbb;
+}
+
+/* 标题 */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #ffffff;
+}
+
+/* 引用 */
+[data-theme="dark"] blockquote {
+  border-left: 4px solid #555;
+  background: #222;
+  color: #ddd;
+}
+
+/* 代码块 */
+[data-theme="dark"] pre,
+[data-theme="dark"] code {
+  background: #262626 !important;
+  color: #e6e6e6 !important;
+}
+
+/* 表格 */
+[data-theme="dark"] table th {
+  background: #333 !important;
+  color: #eee !important;
+}
+[data-theme="dark"] table td {
+  background: #222 !important;
+  color: #ccc !important;
+}
+[data-theme="dark"] table {
+  border-color: #444;
+}
+
+/* 输入框 */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+  background: #222 !important;
+  border: 1px solid #555 !important;
+  color: #eee !important;
+}
+
+/* 你之前的右侧 TOC */
+[data-theme="dark"] #right-toc {
+  background: #1e1e1e !important;
+  border-left: 4px solid #555 !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6) !important;
+}
+[data-theme="dark"] #right-toc a {
+  color: #ddd !important;
+}
+[data-theme="dark"] #right-toc a:hover {
+  color: #fff !important;
+}
+[data-theme="dark"] #right-toc .toc-title {
+  color: #f2f2f2 !important;
+}
+
