@@ -1,0 +1,111 @@
+/* =============== */
+/* 🌙 Dark Theme   */
+/* Auto Mode Switch */
+/* =============== */
+
+@media (prefers-color-scheme: dark) {
+
+  /* 页面背景与默认字体 */
+  body {
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+  }
+
+  /* 链接颜色 */
+  a {
+    color: #8ab4f8;
+  }
+
+  a:hover {
+    color: #a7c8ff;
+    text-decoration: underline;
+  }
+
+  /* 头部导航栏（minima 默认） */
+  .site-header {
+    background-color: #111 !important;
+    border-bottom: 1px solid #333;
+  }
+
+  .site-title,
+  .site-nav .page-link {
+    color: #eaeaea !important;
+  }
+
+  .site-nav .page-link:hover {
+    color: white !important;
+  }
+
+  /* 页脚 */
+  .site-footer {
+    background-color: #111 !important;
+    border-top: 1px solid #333;
+    color: #bbb;
+  }
+
+  /* 文章标题 */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+
+  /* 文章内容中的块引用 */
+  blockquote {
+    color: #ccc;
+    border-left: 4px solid #555;
+    background: #222;
+  }
+
+  /* 代码块（minima 使用 rouge）*/
+  pre, code {
+    background-color: #262626 !important;
+    color: #e6e6e6 !important;
+  }
+
+  /* 表格样式 */
+  table th {
+    background: #333 !important;
+    color: #eee;
+  }
+  table td {
+    background: #222 !important;
+    color: #ddd;
+  }
+  table {
+    border-color: #444;
+  }
+
+  /* 分割线 */
+  hr {
+    background: #444;
+  }
+
+  /* 表单（搜索框等） */
+  input, textarea {
+    background: #222;
+    color: #eee;
+    border: 1px solid #555;
+  }
+
+  /* 右侧目录栏（TOC） */
+  #right-toc {
+    background: #1e1e1e;
+    border-left: 4px solid #555;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  }
+
+  #right-toc a {
+    color: #ddd;
+  }
+
+  #right-toc a:hover {
+    color: #fff;
+  }
+
+  #right-toc .toc-title {
+    color: #f2f2f2;
+  }
+}
+
+/* =============== */
+/* 🌙 END Dark Mode */
+/* =============== */
