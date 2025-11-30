@@ -27,14 +27,41 @@ permalink: /index/
 </style>
 
 <h1>📚 所有文章</h1>
+<!-- 搜索框 -->
+<input type="text" id="searchInput" placeholder="输入关键词搜索文章..." style="width:100%;padding:8px;margin-bottom:20px;font-size:16px;">
 
-{% for post in site.posts %}
-<div class="post-item">
-  <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-  <div class="post-date">{{ post.date | date: "%Y-%m-%d" }}</div>
-  <div class="post-excerpt">
-    {{ post.excerpt | strip_html | truncate: 120 }}
-  </div>
+<!-- 文章列表 -->
+<div id="postList">
+  {% for post in site.posts %}
+  <article class="post">
+    <header>
+      <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</p>
+    </header>
+    <div class="post-content">
+      {{ post.excerpt | strip_html | truncate: 120 }}
+    </div>
+  </article>
+  {% endfor %}
 </div>
-{% endfor %}
 
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const postList = document.getElementById('postList');
+  const posts = postList.getElementsByClassName('post');
+
+  searchInput.addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+
+    for (let i = 0; i < posts.length; i++) {
+      const title = posts[i].querySelector('.post-title').innerText.toLowerCase();
+      const excerpt = posts[i].querySelector('.post-content').innerText.toLowerCase();
+
+      if (title.includes(filter) || excerpt.includes(filter)) {
+        posts[i].style.display = '';
+      } else {
+        posts[i].style.display = 'none';
+      }
+    }
+  });
+</script>
