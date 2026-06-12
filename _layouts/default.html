@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'zh-CN' }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <!-- 允许浏览器自动切换亮暗模式 -->
+  <meta name="color-scheme" content="light dark">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description"
+        content="{{ page.description | default: site.description }}">
+
+  <!-- Minima原有样式 -->
+  <link rel="stylesheet"
+        href="{{ '/assets/main.css' | relative_url }}">
+
+  <!-- 你的暗色模式样式 -->
+  <link rel="stylesheet"
+        href="{{ '/assets/css/dark-mode.css' | relative_url }}">
+
+  {%- feed_meta -%}
+  {%- seo -%}
+
+</head>
+
+<body>
+
+  {% include header.html %}
+
+  <main class="page-content" aria-label="Content">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <!-- 自动跟随系统主题 -->
+  <script>
+  (function() {
+
+    const darkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
+
+    function updateTheme() {
+      document.documentElement.setAttribute(
+        "data-theme",
+        darkMode.matches ? "dark" : "light"
+      );
+    }
+
+    updateTheme();
+
+    darkMode.addEventListener(
+      "change",
+      updateTheme
+    );
+
+  })();
+  </script>
+
+</body>
+
+</html>
