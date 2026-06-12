@@ -28,7 +28,7 @@ permalink: /posts_index/
 
 <h1>所有文章</h1>
 <!-- 搜索框 -->
-<input type="text" id="searchInput" placeholder="输入关键词搜索文章..." style="width:50%;padding:8px;margin-bottom:20px;font-size:16px;">
+<input type="text" id="searchInput" placeholder="输入关键词搜索文章..." style="width:100%;padding:8px;margin-bottom:20px;font-size:16px;">
 
 <!-- 文章列表 -->
 <div id="postList">
