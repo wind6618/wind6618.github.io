@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: footer
 title: "便捷的查询"
 permalink: /posts_index/
 ---
