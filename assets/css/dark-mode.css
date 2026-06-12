@@ -1,0 +1,239 @@
+/* =========================
+   自动亮暗主题
+========================= */
+
+:root {
+  --bg-color: #ffffff;
+  --content-bg: #ffffff;
+  --text-color: #222222;
+  --heading-color: #111111;
+  --link-color: #0366d6;
+  --link-hover: #024ea2;
+
+  --border-color: #e1e4e8;
+
+  --header-bg: #ffffff;
+  --footer-bg: #f8f8f8;
+
+  --code-bg: #f6f8fa;
+  --quote-bg: #fafafa;
+
+  --table-border: #dfe2e5;
+}
+
+/* =========================
+   暗色模式
+========================= */
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --content-bg: #000000;
+
+  --text-color: #d8d8d8;
+  --heading-color: #ffffff;
+
+  --link-color: #8ab4f8;
+  --link-hover: #b8d4ff;
+
+  --border-color: #333333;
+
+  --header-bg: #000000;
+  --footer-bg: #111111;
+
+  --code-bg: #111111;
+  --quote-bg: #151515;
+
+  --table-border: #333333;
+}
+
+/* =========================
+   全局
+========================= */
+
+html,
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition:
+    background-color .3s ease,
+    color .3s ease;
+}
+
+/* =========================
+   Header
+========================= */
+
+.site-header {
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--heading-color);
+}
+
+.site-nav a {
+  color: var(--text-color);
+}
+
+/* =========================
+   内容区
+========================= */
+
+.page-content,
+.post,
+.home,
+.wrapper {
+  background: var(--content-bg);
+  color: var(--text-color);
+}
+
+/* =========================
+   标题
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
+/* =========================
+   链接
+========================= */
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* =========================
+   Footer
+========================= */
+
+.site-footer {
+  text-align: center;
+  padding: 20px 10px;
+  background: var(--footer-bg);
+  color: var(--text-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   代码块
+========================= */
+
+pre,
+code,
+.highlighter-rouge,
+.highlight {
+  background: var(--code-bg);
+}
+
+pre {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+code {
+  color: var(--text-color);
+}
+
+/* =========================
+   引用块
+========================= */
+
+blockquote {
+  background: var(--quote-bg);
+  border-left: 4px solid var(--border-color);
+  padding: 10px 15px;
+}
+
+/* =========================
+   表格
+========================= */
+
+table {
+  color: var(--text-color);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--table-border);
+  padding: 8px;
+}
+
+thead {
+  background: var(--code-bg);
+}
+
+/* =========================
+   分割线
+========================= */
+
+hr {
+  border-color: var(--border-color);
+}
+
+/* =========================
+   图片
+========================= */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   滚动条
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
+/* =========================
+   手机端
+========================= */
+
+@media (max-width: 768px) {
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-nav span {
+    display: none;
+  }
+}
