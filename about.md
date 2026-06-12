@@ -1,5 +1,5 @@
 ---
-layout: footer
+layout: default
 title: about
 permalink: /about/
 ---
